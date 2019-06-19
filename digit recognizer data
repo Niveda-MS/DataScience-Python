@@ -20,7 +20,6 @@ X=train.iloc[:,1:]
 from sklearn.model_selection import train_test_split
 
 Xtrain,Xtest,Ytrain,Ytest=train_test_split(X,Y,test_size=0.2,random_state=42)
-### random state is give the same record when ever we run ####
 
 #### Scaling the data ####
 from sklearn.preprocessing import StandardScaler
@@ -28,7 +27,6 @@ SC=StandardScaler()
 SC.fit(Xtrain)
 X_train=SC.transform(Xtrain)
 X_test=SC.transform(Xtest)
-######we do scaling or not todo scaling
 
 
 
